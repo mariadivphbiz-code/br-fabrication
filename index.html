@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B&R Fabrication | Metal Fabrication, Millwright & Structural Steel</title>
+  <meta name="description" content="B&R Fabrication provides quality metal fabrication, millwright work, structural steel fabrication, welding, job shop services, and mobile truck services in Ventura, California." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f1ea;
+      color: #191919;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .topbar {
+      background: #111111;
+      color: #f7f2e9;
+      padding: 10px 6%;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+
+    .topbar a {
+      font-weight: 700;
+    }
+
+    header {
+      min-height: 760px;
+      color: #ffffff;
+      background:
+        linear-gradient(90deg, rgba(8,8,8,0.88), rgba(8,8,8,0.56), rgba(8,8,8,0.24)),
+        url("https://static.wixstatic.com/media/14eb7a_a8f5f3c44ea64c5cb6cf4ec8b6cf1a37f000.jpg/v1/fill/w_1280%2Ch_720%2Cal_c%2Cq_85%2Cenc_avif%2Cquality_auto/14eb7a_a8f5f3c44ea64c5cb6cf4ec8b6cf1a37f000.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    nav {
+      padding: 28px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -0.8px;
+    }
+
+    .brand span {
+      color: #f05a28;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      align-items: center;
+    }
+
+    .career-link {
+      background: transparent;
+      border: 0;
+      color: inherit;
+      font: inherit;
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .career-link:hover,
+    .nav-links a:hover {
+      color: #f05a28;
+    }
+
+    .hero {
+      padding: 110px 6% 130px;
+      max-width: 980px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      background: rgba(240, 90, 40, 0.18);
+      border: 1px solid rgba(240, 90, 40, 0.45);
+      color: #fff2ea;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -3px;
+      margin-bottom: 26px;
+      max-width: 900px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #f2ece5;
+      max-width: 760px;
+      margin-bottom: 36px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 24px;
+      border-radius: 999px;
+      font-weight: 900;
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #f05a28;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.48);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 0 6%;
+      margin-top: -82px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stat {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 18px 45px rgba(25,25,25,0.12);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .stat strong {
+      display: block;
+      color: #f05a28;
+      font-size: 30px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat span {
+      color: #555;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 90px 6%;
+    }
+
+    .section-title {
+      max-width: 760px;
+      margin-bottom: 44px;
+    }
+
+    .section-title span {
+      color: #f05a28;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.02;
+      letter-spacing: -2px;
+      margin: 12px 0 16px;
+    }
+
+    .section-title p {
+      color: #5e5a54;
+      font-size: 18px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .split img,
+    .project-card img {
+      border-radius: 26px;
+      box-shadow: 0 18px 45px rgba(25,25,25,0.14);
+    }
+
+    .about-copy p {
+      color: #5e5a54;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .badge {
+      background: #191919;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .services {
+      background: #ffffff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #f9f7f2;
+      border: 1px solid #e4ded3;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(25,25,25,0.06);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .card p,
+    .card li {
+      color: #5e5a54;
+    }
+
+    .card ul {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .card li::before {
+      content: "•";
+      color: #f05a28;
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    .dark-card {
+      background: #191919;
+      color: #fff;
+    }
+
+    .dark-card p,
+    .dark-card li {
+      color: #dfd8cf;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 14px 34px rgba(25,25,25,0.08);
+      border: 1px solid #e4ded3;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .project-card div {
+      padding: 24px;
+    }
+
+    .project-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #5e5a54;
+    }
+
+    .clients {
+      background: #191919;
+      color: #fff;
+    }
+
+    .clients .section-title p {
+      color: #d9d1c8;
+    }
+
+    .client-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .client {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 16px;
+      color: #f4eee7;
+      font-weight: 800;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #f05a28, #191919);
+      color: #fff;
+      border-radius: 34px;
+      padding: 58px;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .cta h2 {
+      margin-top: 0;
+    }
+
+    .cta p {
+      color: #fff2ec;
+      font-size: 18px;
+    }
+
+    .location-section {
+      background: #efefef;
+      padding: 90px 6%;
+    }
+
+    .location-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .location-heading span {
+      display: block;
+      font-size: clamp(42px, 7vw, 72px);
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: #b7b7b7;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .location-line {
+      width: 140px;
+      height: 12px;
+      background: #d7bb1f;
+      margin: 18px auto 0;
+    }
+
+    .map-wrap {
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      margin-bottom: 34px;
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 460px;
+      border: 0;
+      display: block;
+    }
+
+    .location-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .info-box {
+      background: #fff;
+      padding: 34px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+    }
+
+    .info-box h3 {
+      font-size: 24px;
+      margin-bottom: 18px;
+      color: #263238;
+    }
+
+    .info-box p,
+    .info-box a,
+    .info-box div {
+      font-size: 17px;
+      color: #4e4e4e;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .info-box a:hover {
+      color: #f05a28;
+    }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.68);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      z-index: 999;
+    }
+
+    .modal-backdrop.active {
+      display: flex;
+    }
+
+    .career-modal {
+      background: #ffffff;
+      color: #191919;
+      width: min(760px, 100%);
+      max-height: 88vh;
+      overflow-y: auto;
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: 0 24px 70px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      background: #f4f1ea;
+      color: #191919;
+      font-size: 26px;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .career-modal h2 {
+      margin: 0 0 18px;
+      color: #b7b7b7;
+      text-transform: uppercase;
+      font-size: clamp(34px, 6vw, 58px);
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+
+    .career-modal h3 {
+      font-size: 24px;
+      margin: 24px 0 10px;
+      color: #263238;
+    }
+
+    .career-modal p,
+    .career-modal a,
+    .career-modal div {
+      color: #4e4e4e;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .career-modal a {
+      display: inline-block;
+      font-weight: 900;
+      color: #f05a28;
+    }
+
+    .quote-button {
+      border: 0;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .quote-form {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 7px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      font-weight: 900;
+      color: #263238;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #d8d2c8;
+      border-radius: 14px;
+      padding: 14px 15px;
+      font-family: inherit;
+      font-size: 16px;
+      color: #191919;
+      background: #fbfaf7;
+      outline: none;
+    }
+
+    .form-group textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #f05a28;
+      box-shadow: 0 0 0 3px rgba(240, 90, 40, 0.12);
+    }
+
+    .send-button {
+      width: fit-content;
+      border: 0;
+      cursor: pointer;
+      margin-top: 6px;
+    }
+
+    footer {
+      padding: 28px 6%;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: #625d56;
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .stats,
+      .cards,
+      .projects-grid,
+      .client-list,
+      .split,
+      .cta,
+      .location-info {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        margin-top: 0;
+        padding-top: 24px;
+      }
+
+      header {
+        min-height: auto;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+
+      .map-wrap iframe {
+        height: 350px;
+      }
+
+      .career-modal {
+        padding: 30px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>Ventura, CA · Established 2002</div>
+    <div>
+      <a href="tel:18054770338">805-477-0338</a> · <a href="mailto:brfab@msn.com">brfab@msn.com</a>
+    </div>
+  </div>
+
+  <header>
+    <nav>
+      <div class="brand">B<span>&</span>R Fabrication</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#clients">Clients</a>
+        <button class="career-link" type="button" onclick="openCareersModal()">Careers</button>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <span class="eyebrow">Metal Fabrication · Millwright · Structural Steel</span>
+      <h1>Reliable fabrication work for commercial, industrial and agricultural projects.</h1>
+      <p>B&R Fabrication provides quality metal fabrication, millwright work, structural steel fabrication, welding, job shop services and mobile truck support for Southern California clients.</p>
+      <div class="buttons">
+        <button class="btn btn-primary quote-button" type="button" onclick="openQuoteModal()">Get a Quote</button>
+        <a class="btn btn-secondary" href="#projects">View Project Work</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>2002</strong>
+      <span>Established in Southern California</span>
+    </div>
+    <div class="stat">
+      <strong>C51</strong>
+      <span>Structural Steel Contractor License</span>
+    </div>
+    <div class="stat">
+      <strong>805</strong>
+      <span>Ventura-based fabrication team</span>
+    </div>
+  </div>
+
+  <section id="services" class="services">
+    <div class="section-title">
+      <span>Services & Capabilities</span>
+      <h2>Built for demanding field, shop and structural work.</h2>
+      <p>From structural steel to mobile welding support, B&R Fabrication gives contractors, industrial operators and agricultural facilities a dependable fabrication partner.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card dark-card">
+        <h3>Commercial</h3>
+        <ul>
+          <li>Structural steel</li>
+          <li>Tenant improvements</li>
+          <li>OSHPD</li>
+          <li>Public works</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Industrial & Millwright</h3>
+        <p>Reliable millwright and fabrication support for industrial operations, equipment, platforms, tanks and field installations.</p>
+      </div>
+      <div class="card">
+        <h3>Residential & Agricultural</h3>
+        <p>Fabrication for remodels, additions, new construction and agricultural food processing needs.</p>
+      </div>
+      <div class="card">
+        <h3>Job Shop Services</h3>
+        <ul>
+          <li>Shearing</li>
+          <li>Punching</li>
+          <li>Drilling</li>
+          <li>Welding</li>
+          <li>Bending & forming</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Welding Capabilities</h3>
+        <ul>
+          <li>MIG / GMAW / FCAW</li>
+          <li>TIG / GTAW</li>
+          <li>Stick / SMAW</li>
+          <li>Ferrous and non-ferrous welding</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Mobile Trucks</h3>
+        <p>On-site fabrication and repair support when the job needs field response, not just shop production.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="split">
+      <div class="about-copy">
+        <div class="section-title">
+          <span>About B&R Fabrication</span>
+          <h2>A father-and-son fabrication company built on quality work.</h2>
+        </div>
+        <p>B&R Fabrication was established in 2002 to provide reliable, quality metal fabrication and millwright work for the industrial and agricultural sectors in Southern California.</p>
+        <p>The company is the realization of a father and son partnership, Roy and Brian DeFisher, with life-long careers in welding, fabrication and millwright work.</p>
+        <div class="badges">
+          <span class="badge">CA License #839510</span>
+          <span class="badge">C51 · C61/D21</span>
+          <span class="badge">LA City Approved #FB01Q48</span>
+          <span class="badge">DIR #1000018733</span>
+        </div>
+      </div>
+      <img src="https://static.wixstatic.com/media/14eb7a_df7fc2a0b76c4668a6c6bfed66894fde~mv2_d_2048_1536_s_2.jpg/v1/crop/x_190%2Cy_537%2Cw_1479%2Ch_717/fill/w_486%2Ch_227%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_df7fc2a0b76c4668a6c6bfed66894fde~mv2_d_2048_1536_s_2.jpg" alt="B&R Fabrication service truck on a structural steel project site" />
+    </div>
+  </section>
+
+  <section id="projects" class="services">
+    <div class="section-title">
+      <span>Featured Projects</span>
+      <h2>Real fabrication work across structural, industrial and field projects.</h2>
+      <p>Selected project examples include structural steel frames, stainless food processing tanks, staircase replacement, custom valves, medical building steel work and cooling tower platforms.</p>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/14eb7a_be9379ba1e684e8286b89348487733c7~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_980%2Ch_653%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_be9379ba1e684e8286b89348487733c7~mv2_d_5760_3840_s_4_2.jpg" alt="Santa Barbara Bowl Box Office structural steel frame" />
+        <div>
+          <h3>Santa Barbara Bowl Box Office</h3>
+          <p>Fabricated and erected the structural steel frame for a new box office.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/14eb7a_dba15ba630794bee92073e256b335443~mv2_d_4608_3456_s_4_2.jpg/v1/fill/w_980%2Ch_735%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_dba15ba630794bee92073e256b335443~mv2_d_4608_3456_s_4_2.jpg" alt="Food processing tank fabrication" />
+        <div>
+          <h3>Food Processing Tank</h3>
+          <p>Purged and TIG welded stainless steel sections for a 6-foot diameter tank.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/14eb7a_c037c562e2894acab644ed05a49a3c6e~mv2_d_5344_3006_s_4_2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_c037c562e2894acab644ed05a49a3c6e~mv2_d_5344_3006_s_4_2.jpg" alt="Point Mugu staircase replacement" />
+        <div>
+          <h3>Point Mugu Staircase Replacement</h3>
+          <p>Field measured, shop fabricated and erected new stair stringers, treads and handrails.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/14eb7a_4405651abc864ff0b8541090d1eeed1c~mv2_d_5344_3006_s_4_2.jpg/v1/fill/w_980%2Ch_551%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_4405651abc864ff0b8541090d1eeed1c~mv2_d_5344_3006_s_4_2.jpg" alt="30-inch check valve fabrication" />
+        <div>
+          <h3>30-Inch Check Valve</h3>
+          <p>Manufactured and pressure tested custom ball check valves for mining use.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/14eb7a_21527e02138344e892d2e5eeed9a5594~mv2_d_2048_1536_s_2.jpg/v1/fill/w_980%2Ch_735%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_21527e02138344e892d2e5eeed9a5594~mv2_d_2048_1536_s_2.jpg" alt="Sierra Medical Plaza structural steel frame" />
+        <div>
+          <h3>Sierra Medical Plaza</h3>
+          <p>Fabricated structural steel framing, stairs, handrails and security fencing.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://static.wixstatic.com/media/14eb7a_52aa607398204b229ccb811b7ec4da1d~mv2_d_3006_5344_s_4_2.jpg/v1/fill/w_980%2Ch_1742%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/14eb7a_52aa607398204b229ccb811b7ec4da1d~mv2_d_3006_5344_s_4_2.jpg" alt="AT&T cooling tower platform crane lift" />
+        <div>
+          <h3>AT&T Cooling Tower Platform</h3>
+          <p>Fabricated and pre-assembled a platform, then reassembled it for rooftop installation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients" class="clients">
+    <div class="section-title">
+      <span>Clients</span>
+      <h2>Trusted by contractors, builders and industrial operators.</h2>
+      <p>A sample of listed clients includes construction companies, agricultural brands, energy operators and food processing businesses.</p>
+    </div>
+
+    <div class="client-list">
+      <div class="client">Aera Energy, LLC</div>
+      <div class="client">Allen Construction</div>
+      <div class="client">Boskovich Farms</div>
+      <div class="client">Calavo Growers</div>
+      <div class="client">Cushman Contracting</div>
+      <div class="client">Diani Building Corp.</div>
+      <div class="client">Quinn Power Systems</div>
+      <div class="client">Wholesome Harvest Baking</div>
+    </div>
+  </section>
+
+  <section id="contact" class="location-section">
+    <div class="location-heading">
+      <span>Contact</span>
+      <div class="location-line"></div>
+    </div>
+
+    <div class="map-wrap">
+      <iframe
+        src="https://www.google.com/maps?q=1715+N+Olive+Street,+Ventura,+CA+93001&output=embed"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="location-info">
+      <div class="info-box">
+        <h3>Inquiries</h3>
+        <p>For any inquiries, questions or commendations, please call 805-477-0338 or email B&amp;R Fabrication directly.</p>
+        <a href="tel:18054770338">Office: 805-477-0338</a>
+        <a href="mailto:brfab@msn.com">brfab@msn.com</a>
+        <div>Fax: 805-477-1323</div>
+        <a href="https://www.facebook.com/BRFabrications" target="_blank" rel="noopener">Facebook: B&amp;R Fabrications</a>
+        <a href="https://www.brfabrication.com/" target="_blank" rel="noopener">brfabrication.com</a>
+      </div>
+
+      <div class="info-box">
+        <h3>B&amp;R Fabrication</h3>
+        <p>1715 N. Olive Street</p>
+        <p>Ventura, CA 93001-1369</p>
+        <p>Metal Fabrication · Millwright · Structural Steel</p>
+        <p>CA License #839510</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-backdrop" id="careerModal" aria-hidden="true">
+    <div class="career-modal" role="dialog" aria-modal="true" aria-labelledby="careerModalTitle">
+      <button class="modal-close" type="button" onclick="closeCareersModal()" aria-label="Close careers information">&times;</button>
+      <h2 id="careerModalTitle">Contact</h2>
+
+      <h3>Inquiries</h3>
+      <p>For any inquiries, questions or commendations, please call: <a href="tel:18054770338">805-477-0338</a> or fill out the following form.</p>
+
+      <h3>B&amp;R Fabrication</h3>
+      <p>1715 N. Olive Street</p>
+      <p>Ventura, CA 93001-1369</p>
+      <p><a href="mailto:brfab@msn.com">brfab@msn.com</a></p>
+      <p>Office: <a href="tel:18054770338">805-477-0338</a></p>
+      <p>Fax: 805-477-1323</p>
+
+      <h3>Employment</h3>
+      <p>To apply for a job with B&amp;R Fabrication, please send a cover letter together with your resumé to: <a href="mailto:brfab@msn.com">brfab@msn.com</a> or drop them off at our office.</p>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="quoteModal" aria-hidden="true">
+    <div class="career-modal" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+      <button class="modal-close" type="button" onclick="closeQuoteModal()" aria-label="Close quote form">&times;</button>
+      <h2 id="quoteModalTitle">Get a Quote</h2>
+      <p>Please fill out the form below and your inquiry will be prepared for email submission.</p>
+
+      <form class="quote-form" id="quoteForm" onsubmit="sendQuoteEmail(event)">
+        <div class="form-group">
+          <label for="quoteName">Name</label>
+          <input type="text" id="quoteName" name="name" placeholder="Your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="quoteEmail">Email</label>
+          <input type="email" id="quoteEmail" name="email" placeholder="yourname@email.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="quotePhone">Contact Number</label>
+          <input type="tel" id="quotePhone" name="phone" placeholder="Your phone number" required />
+        </div>
+
+        <div class="form-group">
+          <label for="quoteService">List of Services Offered</label>
+          <select id="quoteService" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Commercial Structural Steel">Commercial Structural Steel</option>
+            <option value="Industrial & Millwright Work">Industrial & Millwright Work</option>
+            <option value="Residential Fabrication">Residential Fabrication</option>
+            <option value="Agricultural & Food Processing">Agricultural & Food Processing</option>
+            <option value="Job Shop Services">Job Shop Services</option>
+            <option value="Welding Services">Welding Services</option>
+            <option value="Bending & Forming">Bending & Forming</option>
+            <option value="Shearing, Punching & Drilling">Shearing, Punching & Drilling</option>
+            <option value="Mobile Truck / On-Site Service">Mobile Truck / On-Site Service</option>
+            <option value="Custom Project Inquiry">Custom Project Inquiry</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteMessage">Note / Inquiry Section</label>
+          <textarea id="quoteMessage" name="message" placeholder="Tell us about your project, timeline, materials, location, or questions." required></textarea>
+        </div>
+
+        <button class="btn btn-primary send-button" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const careerModal = document.getElementById('careerModal');
+    const quoteModal = document.getElementById('quoteModal');
+
+    function openCareersModal() {
+      careerModal.classList.add('active');
+      careerModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCareersModal() {
+      careerModal.classList.remove('active');
+      careerModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function openQuoteModal() {
+      quoteModal.classList.add('active');
+      quoteModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeQuoteModal() {
+      quoteModal.classList.remove('active');
+      quoteModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function sendQuoteEmail(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('quoteName').value.trim();
+      const email = document.getElementById('quoteEmail').value.trim();
+      const phone = document.getElementById('quotePhone').value.trim();
+      const service = document.getElementById('quoteService').value;
+      const message = document.getElementById('quoteMessage').value.trim();
+
+      const subject = encodeURIComponent('New Quote Request from B&R Fabrication Website');
+      const body = encodeURIComponent(
+        `Name: ${name}
+` +
+        `Email: ${email}
+` +
+        `Contact Number: ${phone}
+` +
+        `Requested Service: ${service}
+
+` +
+        `Note / Inquiry:
+${message}`
+      );
+
+      window.location.href = `mailto:billcoleracing@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    careerModal.addEventListener('click', function(event) {
+      if (event.target === careerModal) {
+        closeCareersModal();
+      }
+    });
+
+    quoteModal.addEventListener('click', function(event) {
+      if (event.target === quoteModal) {
+        closeQuoteModal();
+      }
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && careerModal.classList.contains('active')) {
+        closeCareersModal();
+      }
+
+      if (event.key === 'Escape' && quoteModal.classList.contains('active')) {
+        closeQuoteModal();
+      }
+    });
+  </script>
+
+  <footer>
+    <div>© 2026 B&R Fabrication. All rights reserved.</div>
+    <div>Metal Fabrication · Millwright Work · Structural Steel · Welding</div>
+  </footer>
+</body>
+</html>

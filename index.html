@@ -361,6 +361,73 @@
       color: #d9d1c8;
     }
 
+    .reviews-section {
+      background: #ffffff;
+    }
+
+    .review-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .review-card {
+      background: #f9f7f2;
+      border: 1px solid #e4ded3;
+      border-radius: 26px;
+      padding: 34px 28px;
+      text-align: center;
+      box-shadow: 0 14px 34px rgba(25,25,25,0.08);
+    }
+
+    .review-photo,
+    .review-placeholder {
+      width: 98px;
+      height: 98px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px;
+      border: 4px solid #f05a28;
+      box-shadow: 0 10px 24px rgba(25,25,25,0.14);
+    }
+
+    .review-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #191919;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .review-card h3 {
+      font-size: 21px;
+      margin-bottom: 8px;
+      color: #191919;
+    }
+
+    .stars {
+      color: #f0b429;
+      font-size: 21px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    .review-card p {
+      color: #5e5a54;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .review-card small {
+      color: #8a837a;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
     .client-list {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -618,6 +685,7 @@
       .stats,
       .cards,
       .projects-grid,
+      .review-cards,
       .client-list,
       .split,
       .cta,
@@ -663,6 +731,7 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
         <a href="#clients">Clients</a>
         <button class="career-link" type="button" onclick="openCareersModal()">Careers</button>
         <a href="#contact">Contact</a>
@@ -815,6 +884,40 @@
           <h3>AT&T Cooling Tower Platform</h3>
           <p>Fabricated and pre-assembled a platform, then reassembled it for rooftop installation.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews-section">
+    <div class="section-title">
+      <span>Customer Reviews</span>
+      <h2>What customers say about B&amp;R Fabrication.</h2>
+      <p>Real feedback from customers who have worked with B&amp;R Fabrication.</p>
+    </div>
+
+    <div class="review-cards">
+      <div class="review-card">
+        <img class="review-photo" src="Cr Peters.jpg" alt="Cr Peters" />
+        <h3>Cr Peters</h3>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>Friendly customer service and fabrication that can not be topped!</p>
+        <small>September 24, 2019</small>
+      </div>
+
+      <div class="review-card">
+        <img class="review-photo" src="Gary Latshaw.jpg" alt="Gary Latshaw" />
+        <h3>Gary Latshaw</h3>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>The quality of workmanship invested from the smallest job to the most challenging one.</p>
+        <small>December 21, 2018</small>
+      </div>
+
+      <div class="review-card">
+        <div class="review-placeholder" aria-label="Thomas Moulis profile placeholder">TM</div>
+        <h3>Thomas Moulis</h3>
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p>Good job, good price. Friendly owner to deal with.</p>
+        <small>August 15, 2018</small>
       </div>
     </div>
   </section>

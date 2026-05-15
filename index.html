@@ -281,17 +281,37 @@
       border-radius: 24px;
       padding: 30px;
       box-shadow: 0 12px 30px rgba(25,25,25,0.06);
+      transition: 0.25s ease;
+    }
+
+    .card:hover {
+      background: #191919;
+      border-color: #191919;
+      color: #fff;
+      transform: translateY(-6px);
+      box-shadow: 0 18px 45px rgba(25,25,25,0.16);
     }
 
     .card h3 {
       font-size: 22px;
       line-height: 1.15;
       margin-bottom: 12px;
+      transition: 0.25s ease;
     }
 
     .card p,
     .card li {
       color: #5e5a54;
+      transition: 0.25s ease;
+    }
+
+    .card:hover h3 {
+      color: #fff;
+    }
+
+    .card:hover p,
+    .card:hover li {
+      color: #dfd8cf;
     }
 
     .card ul {
@@ -308,12 +328,22 @@
     }
 
     .dark-card {
-      background: #191919;
-      color: #fff;
+      background: #f9f7f2;
+      color: #191919;
     }
 
     .dark-card p,
     .dark-card li {
+      color: #5e5a54;
+    }
+
+    .dark-card:hover {
+      background: #191919;
+      color: #fff;
+    }
+
+    .dark-card:hover p,
+    .dark-card:hover li {
       color: #dfd8cf;
     }
 
@@ -432,6 +462,24 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 14px;
+      max-height: 224px;
+      overflow-y: auto;
+      padding-right: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .client-list::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .client-list::-webkit-scrollbar-track {
+      background: rgba(255,255,255,0.08);
+      border-radius: 999px;
+    }
+
+    .client-list::-webkit-scrollbar-thumb {
+      background: #f05a28;
+      border-radius: 999px;
     }
 
     .client {
@@ -441,6 +489,9 @@
       padding: 16px;
       color: #f4eee7;
       font-weight: 800;
+      min-height: 88px;
+      display: flex;
+      align-items: center;
     }
 
     .cta {
@@ -710,6 +761,10 @@
         height: 350px;
       }
 
+      .client-list {
+        max-height: 440px;
+      }
+
       .career-modal {
         padding: 30px 22px;
       }
@@ -932,12 +987,41 @@
     <div class="client-list">
       <div class="client">Aera Energy, LLC</div>
       <div class="client">Allen Construction</div>
-      <div class="client">Boskovich Farms</div>
-      <div class="client">Calavo Growers</div>
-      <div class="client">Cushman Contracting</div>
-      <div class="client">Diani Building Corp.</div>
-      <div class="client">Quinn Power Systems</div>
-      <div class="client">Wholesome Harvest Baking</div>
+      <div class="client">Apex General Contractors, Inc.</div>
+      <div class="client">Armstrong Associates, Inc.</div>
+      <div class="client">Artner West Construction, Inc.</div>
+      <div class="client">Boskovich Farms, Incorporated</div>
+      <div class="client">Cabrillo Economic Development Corp.</div>
+      <div class="client">Calavo Growers, Inc.</div>
+      <div class="client">CFM Builders</div>
+      <div class="client">Cushman Contracting Corp.</div>
+      <div class="client">Diani Building Corporation</div>
+      <div class="client">Gluck Building Company</div>
+      <div class="client">H.C. Olsen Construction Co. Inc.</div>
+      <div class="client">Hartigan/Foley</div>
+      <div class="client">HBE Corporation</div>
+      <div class="client">HRL</div>
+      <div class="client">I.E. Pacific, Inc.</div>
+      <div class="client">Interstate Rebar Inc.</div>
+      <div class="client">Kirk Hoffman Construction</div>
+      <div class="client">Knight Construction Specialists, Inc.</div>
+      <div class="client">Larco Development, Inc.</div>
+      <div class="client">Lincoln James Construction</div>
+      <div class="client">Loe Construction Inc.</div>
+      <div class="client">McGillivray Construction, Inc.</div>
+      <div class="client">MSI Construction</div>
+      <div class="client">Olsen &amp; Sons Construction</div>
+      <div class="client">Otto Construction</div>
+      <div class="client">Quinn Power Systems Associates</div>
+      <div class="client">Sierra View General Contractor</div>
+      <div class="client">Southern California Builders LL</div>
+      <div class="client">Steve's Restaurant Service</div>
+      <div class="client">Taft Electric Company</div>
+      <div class="client">Trans Fresh</div>
+      <div class="client">Upwey Valve &amp; Engineering Pty Ltd</div>
+      <div class="client">Ventura Coast Construction, Inc.</div>
+      <div class="client">Viola Incorporated</div>
+      <div class="client">Wholesome Harvest Baking, LLC</div>
     </div>
   </section>
 
